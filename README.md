@@ -27,4 +27,4 @@ O botão de WhatsApp abre a conversa com uma mensagem pronta; o visitante decide
 
 ## Créditos
 
-by Miguel. O símbolo do livro é uma proposta visual para o site. A escola pode substituir pela sua logo oficial.
+by Miguel. Logo oficial fornecida pelo responsável pelo projeto.
