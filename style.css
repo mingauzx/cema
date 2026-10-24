@@ -120,3 +120,29 @@ h1,h2{font-weight:800;letter-spacing:-.035em}
 footer{padding-bottom:84px}
 }
 @media(prefers-reduced-motion:reduce){.reveal.is-visible{animation:none}}
+
+/* Campanha de matrículas 2027 inspirada no material da escola. */
+.admissions-campaign{position:relative;overflow:hidden;background:#ffdf35;color:#082b78;border-bottom:6px solid #ed2448}
+.admissions-campaign::before{content:"";position:absolute;width:390px;height:390px;border:10px solid #ec3654;box-shadow:0 0 0 10px #ffbd38,0 0 0 20px #3ba661,0 0 0 30px #289bcc,0 0 0 40px #5c43a8;border-radius:50%;top:-340px;left:25%;opacity:.75;pointer-events:none}
+.campaign-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:center;position:relative}
+.campaign-badge{font-size:11px;font-weight:800;letter-spacing:1.5px;margin-bottom:18px}
+.campaign-year{display:inline-block;background:#0b327f;color:white;border-radius:18px 5px 18px 5px;padding:0 24px;font-size:46px;font-weight:800;line-height:1.4;margin-bottom:20px;transform:rotate(-3deg)}
+.campaign-copy h2{font-size:clamp(42px,5.5vw,72px);line-height:1.02;margin-bottom:22px;font-weight:800}
+.campaign-copy h2 span{color:#cf1235}
+.campaign-description{font-size:19px;max-width:430px}
+.campaign-levels{display:flex;flex-wrap:wrap;gap:8px}
+.campaign-levels span{padding:7px 12px;background:#b71064;color:white;font-size:12px;font-weight:800;border-radius:9px}
+.campaign-levels span:nth-child(2){background:#14743e}
+.campaign-levels span:nth-child(3){background:#7131ad}
+.campaign-offer{position:relative;background:#fffdf4;border-radius:24px;padding:38px;box-shadow:10px 12px 0 #092e7d;transform:rotate(1deg);border:2px solid #092e7d}
+.campaign-star{position:absolute;right:24px;top:14px;font-size:40px;color:#cf1235}
+.campaign-offer-label{font-size:13px;letter-spacing:1px;font-weight:800;margin-bottom:5px}
+.campaign-offer h3{font-size:clamp(36px,4vw,52px);font-weight:800;margin-bottom:18px}
+.campaign-deadline{background:#cf1235;color:white;border-radius:12px;padding:12px 16px;font-size:17px;line-height:1.5}
+.campaign-deadline strong{display:block;color:#fff077;font-size:25px}
+.campaign-offer>p:not([class]){font-size:14px;color:#42516c}
+.campaign-cta{background:#12633f;width:100%;font-size:14px}
+.campaign-cta:hover{background:#0b4d30}
+.campaign-offer small{display:block;text-align:center;font-size:10px;margin-top:16px}
+@media(max-width:760px){.campaign-grid{grid-template-columns:1fr;gap:32px}.campaign-copy h2{font-size:54px}.campaign-offer{padding:28px;max-width:500px;width:calc(100% - 10px);transform:none}.campaign-description{font-size:17px}.campaign-year{font-size:38px}.campaign-levels span{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.campaign-year,.campaign-offer{transform:none}}
