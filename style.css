@@ -84,3 +84,39 @@ a:focus-visible,summary:focus-visible{outline-color:#a7346a}
 h1,h2{font-weight:800;letter-spacing:-.035em}
 .hero h1 em{font-weight:700}
 .logo-caption strong{font-weight:700}
+
+/* Navegação, apresentação e contato. */
+.mobile-menu{display:none}
+.proposal-section{background:#fff7ea;border-block:1px solid #f1e4ce}
+.proposal-intro{max-width:660px;color:var(--muted)}
+.proposal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:32px 0}
+.proposal-grid article{padding:26px;border-radius:18px;background:#fff;border:1px solid #f0d9e3}
+.proposal-grid article:nth-child(2){border-color:#bce5d9}
+.proposal-grid article:nth-child(3){border-color:#dac9ed}
+.proposal-grid article>span{display:inline-grid;place-items:center;width:38px;height:38px;background:#fbe4ed;color:#a23564;border-radius:50%;font-weight:800;margin-bottom:18px}
+.proposal-grid article:nth-child(2)>span{background:#def3eb;color:#196c61}
+.proposal-grid article:nth-child(3)>span{background:#ece1fa;color:#674493}
+.proposal-grid p{font-size:14px;color:var(--muted);margin-bottom:0}
+.school-map{margin-bottom:60px;border-radius:18px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
+.school-map iframe{display:block;width:100%;max-width:100%}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:40;display:flex;align-items:center;gap:10px;background:#176c46;color:white;padding:14px 18px;border-radius:99px;box-shadow:0 5px 24px #102f3533;text-decoration:none;font-size:14px;font-weight:800}
+.whatsapp-float:hover{background:#105437}
+.reveal.is-visible{animation:gentle-arrival .6s ease both}
+@keyframes gentle-arrival{from{opacity:.45;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){
+.navigation{flex-wrap:nowrap;position:relative}
+.navigation>nav{display:none}
+.mobile-menu{display:block;margin-left:auto}
+.mobile-menu summary{cursor:pointer;display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;color:var(--forest-deep);font-weight:800;list-style:none}
+.mobile-menu summary::-webkit-details-marker{display:none}
+.mobile-menu nav{position:absolute;right:0;top:calc(100% - 4px);z-index:45;display:flex;flex-direction:column;align-items:stretch;gap:0;width:220px;padding:10px;background:white;border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px #1d327024}
+.mobile-menu nav a{padding:12px 14px;border-radius:8px;font-size:15px}
+.mobile-menu nav a:hover{background:var(--soft)}
+.proposal-grid{grid-template-columns:1fr;gap:14px}
+.school-map{margin-bottom:40px}
+.school-map iframe{height:280px}
+.whatsapp-float{bottom:16px;right:16px;padding:14px}
+.whatsapp-float span{display:none}
+footer{padding-bottom:84px}
+}
+@media(prefers-reduced-motion:reduce){.reveal.is-visible{animation:none}}
